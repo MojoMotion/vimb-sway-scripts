@@ -1,0 +1,8 @@
+#!/bin/bash
+
+TMP_FILE=/tmp/$USER-vimb-session
+echo "" > $TMP_FILE
+
+find /run/user/$UID -name vimb-* | xargs -i cat {} >> $TMP_FILE
+
+rm /run/user/$UID/vimb-*

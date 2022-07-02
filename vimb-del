@@ -1,0 +1,4 @@
+#!/bin/bash
+
+rm /run/user/$UID/vimb-$1
+sed -i "s|$2||" /tmp/$USER-vimb-session

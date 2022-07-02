@@ -1,0 +1,6 @@
+#!/bin/bash
+
+
+for URI in $(cat /tmp/$USER-vimb-session); do
+  vimb $URI &
+done
